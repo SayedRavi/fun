@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plugins/materialize/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/jquery/jquery.min.js">
+    <title>Fun</title>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="col s12 mt-5" style="margin-top: 50px;">
+            <div class="card">
+                <div class="card-content">
+                    <h4 class="card-title" align="center">Login</h4>
+                    <form action="" method="post">
+                    
+                        <div class="row">
+                            <div class="s12 input-field">
+                                <i class="material-icons prefix">person_outline</i>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" value="" 
+                                class="">
+                               
+                            </div>
+                            <div class="s12 input-field">
+                                <i class="material-icons prefix">lock_outline</i>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" value="" 
+                                class="">
+                            </div>
+                            <div class="s12">
+                                <button class="btn ml-5" style="margin-left: 40px;" type="submit">Login</button>
+                                <button class="btn btn_name">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var btn = document.querySelector('.btn_name');
+        var position;
+
+        btn.addEventListener("mouseover", function (){
+            position ? (position = 0) : (position = 250);
+            btn.style.transform = `translate(${position}px, 0px)`;
+            btn.style.transition = "all 0.3s ease";
+        });
+    </script>
+
+    <script src="plugins/materialize/materialize.min.js"></script>
+</body>
+</html>
